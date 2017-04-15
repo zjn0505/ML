@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# explained in https://ckmarkoh.github.io/blog/2014/03/15/machine-learning-perceptron-algorithm/
+
 X1 = np.array([-0.62231486, -0.96251306,  0.42269922, -1.452746  , -0.66915783,
                -0.35716016,  0.49505163, -1.8117848 ,  0.53376487, -1.86923838,
                 0.71434306, -0.4055084 ,  0.82887254,  0.81221287,  1.44280951,

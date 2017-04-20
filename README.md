@@ -4,7 +4,8 @@
 
 #### linear regression
 - Cost Function
-![LaTeX for Cost Function](http://www.sciweavers.org/upload/Tex2Img_1492691651/render.png)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![LaTeX for Cost Function](http://www.sciweavers.org/upload/Tex2Img_1492691651/render.png)
 - Gradient Descent for Multiple Variables
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![LaTeX for Gradient Descent](http://www.sciweavers.org/upload/Tex2Img_1492581297/render.png)

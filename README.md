@@ -49,6 +49,7 @@ The vectorized version is:
 | \- Needs many iterations            | \+ Don't need to iterate  |
 | \+ Works well even when n is large  | \- Need to compute ![(X^TX)^{-1}X^T](http://www.sciweavers.org/upload/Tex2Img_1492752105/render.png), slow if n is very large |
 | Chosen when n > 10k                 | Chosen when n < 10k       |
+| May need Feature Scaling            | No need of Feature Scaling|
 
 
 &nbsp; [python](https://github.com/zjn0505/ML/blob/master/Python/gradient_descent.py)
@@ -63,5 +64,77 @@ A2:
 - [Linear least squares (Wikipedia)](https://en.wikipedia.org/wiki/Linear_least_squares_(mathematics))
 
 Note1: It seems to be a good habbit to declare necessary variables (vectors, matrices, return values) before using them. One will easily remember their dimensions in review.
+
+
+
+#### Logistic Regression
+
+- cost function
+
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492765827/render.png" alt="J(\theta)=\sum_{i=1}^{m}cost(h_\theta(x^{(i)}),y^{(i)})"/>
+</p>
+
+where the hypothesis ![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_1492693075/render.png) is given by the Sigmoid Function
+
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492767594/render.png" alt="h_\theta (x) = g ( \theta^T x )"/>
+  <br>
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492767651/render.png" alt="z = \theta^T"/>
+  <br>
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492767678/render.png" alt="g(z) = \dfrac{1}{1 + e^{-z}}"/>
+</p>
+
+and the cost() function is
+
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492767109/render.png" alt="cost(h_\theta(x),y) =\begin{cases}-logh_\theta(x) & y = 1\\-log(1-h_\theta(x)) & y = 0\end{cases}"/>
+</p>
+
+It means
+
+- If ![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_1492693075/render.png) = y, then cost(![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_1492693075/render.png),y)=0 for both y=0 and y=1. (A good prediction)
+
+- If y=0, then cost(![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_1492693075/render.png) , y) → ∞ as ![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_1492693075/render.png) → 1. (A bad prediction)
+
+- If y=1, then cost(![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_1492693075/render.png) , y) → ∞ as ![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_1492693075/render.png) → 0. (A bad prediction)
+
+
+
+Written in one line: y ∈ {0,1}
+
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492765286/render.png" alt="cost(h_\theta(x),y)=-ylog(h_\theta(x))-(1-y)log(1-h_\theta(x))"/>
+</p>
+
+The entire cost function is:
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492766145/render.png" alt="J(\theta)=-\frac{1}{m}\sum_{i=1}^{m}[y^{(i)}log(h_\theta(x^{(i)}))+(1-y^{(i)})log(1-h_\theta(x^{(i)}))]"/>
+</p>
+
+
+The vectorized version is:
+<p align="center">
+    h=g(XΘ)
+    <br>
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492766410/render.png" alt="J(\theta) = \frac{1}{m} \cdot \left(-y^{T}\log(h)-(1-y)^{T}\log(1-h)\right)"/>
+</p>
+
+
+- Gradient Descent
+
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492766977/render.png" alt="\theta_j := \theta_j - \alpha \frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)}-y^{(i)})x_j^{(i)})"/>
+</p>
+
+
+The vectorized version is:
+
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492767012/render.png" alt="\theta := \theta - \frac{\alpha}{m} X^{T} (g(X \theta ) - \vec{y})"/>
+</p>
+
+
+
 
 <!--- LaTeX generated in http://www.sciweavers.org/free-online-latex-equation-editor -->

@@ -18,6 +18,13 @@ where the hypothesis ![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_149
   <!-- h_\theta(x)=\theta^Tx=\theta_0+\theta_1x_1+...+\theta_nx_n  -->
 </p>
 
+The vectorized version is:
+
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492747002/render.png"/>
+  <!-- J(\theta)=\frac{1}{2m}(X\theta-\overrightarrow{y})^T(X\theta-\overrightarrow{y})  -->
+</p>
+
 - Gradient Descent
 
 <p align="center">
@@ -25,6 +32,13 @@ where the hypothesis ![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_149
   <!--- (\theta_j := \theta_j - \alpha \frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)}-y^{(i)})x_j^{(i)})) -->
 </p>
 
+
+The vectorized version is:
+
+<p align="center">
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492747223/render.png"/>
+  <!-- \theta := \theta-\frac{\alpha}{m}X^T(X\theta-\overrightarrow{y})  -->
+</p>
 
 - Normal Equation
 
@@ -50,9 +64,9 @@ Q1: Is there a proper choice of learning rate and iteration so that we can say "
 Q2: Any ideas on derivation of Normal Equation?
 
 A2:
-- [Five Ways to Derive the Normal Equation](http://blog.xiangjiang.live/derivations-of-the-normal-equation/)
+- [Derivation of the Normal Equation for linear regression](http://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression)
 
-- [掰开揉碎推导Normal Equation](https://zhuanlan.zhihu.com/p/22757336)
+- [Linear least squares (Wikipedia)](https://en.wikipedia.org/wiki/Linear_least_squares_(mathematics))
 
 Note1: It seems to be a good habbit to declare necessary variables (vectors, matrices, return values) before using them. One will easily remember their dimensions in review.
 

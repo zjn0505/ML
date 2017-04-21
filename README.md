@@ -6,45 +6,39 @@
 - Cost Function
 
 <p align="center">
-  <img src="http://www.sciweavers.org/upload/Tex2Img_1492693028/render.png"/>
-  <!-- J(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2 -->
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492693028/render.png" alt="J(\theta)=\frac{1}{2m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})^2"/>
 </p>
 
 
 where the hypothesis ![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_1492693075/render.png) is given by the linear model
 
 <p align="center">
-  <img src="http://www.sciweavers.org/upload/Tex2Img_1492692889/render.png"/>
-  <!-- h_\theta(x)=\theta^Tx=\theta_0+\theta_1x_1+...+\theta_nx_n  -->
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492692889/render.png" alt="h_\theta(x)=\theta^Tx=\theta_0+\theta_1x_1+...+\theta_nx_n"/>
 </p>
 
 The vectorized version is:
 
 <p align="center">
-  <img src="http://www.sciweavers.org/upload/Tex2Img_1492747002/render.png"/>
-  <!-- J(\theta)=\frac{1}{2m}(X\theta-\overrightarrow{y})^T(X\theta-\overrightarrow{y})  -->
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492747002/render.png" alt="J(\theta)=\frac{1}{2m}(X\theta-\overrightarrow{y})^T(X\theta-\overrightarrow{y})"/>
 </p>
 
 - Gradient Descent
 
 <p align="center">
-  <img src="http://www.sciweavers.org/upload/Tex2Img_1492581297/render.png"/>
-  <!--- (\theta_j := \theta_j - \alpha \frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)}-y^{(i)})x_j^{(i)})) -->
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492581297/render.png" alt="(\theta_j := \theta_j - \alpha \frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)}-y^{(i)})x_j^{(i)}))"/>
 </p>
 
 
 The vectorized version is:
 
 <p align="center">
-  <img src="http://www.sciweavers.org/upload/Tex2Img_1492747223/render.png"/>
-  <!-- \theta := \theta-\frac{\alpha}{m}X^T(X\theta-\overrightarrow{y})  -->
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492747223/render.png" alt="\theta := \theta-\frac{\alpha}{m}X^T(X\theta-\overrightarrow{y})"/>
 </p>
 
 - Normal Equation
 
 <p align="center">
-  <img src="http://www.sciweavers.org/upload/Tex2Img_1492694590/render.png"/>
-  <!--- \theta=(X^TX)^{-1}X^T \overrightarrow{y}  -->
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492752074/render.png" alt="\theta=(X^TX)^{-1}X^T \overrightarrow{y}"/>
 </p>
 
 ##### Comparison of Gradient Descent and Normal Equation
@@ -53,7 +47,7 @@ The vectorized version is:
 | :---:                               | :----:                    |
 | \- Need to choose α                 | \+ No need to choose α    |
 | \- Needs many iterations            | \+ Don't need to iterate  |
-| \+ Works well even when n is large  | \- Need to compute ![(X^TX)^{-1}X^T](http://www.sciweavers.org/upload/Tex2Img_1492695138/render.png), slow if n is very large |
+| \+ Works well even when n is large  | \- Need to compute ![(X^TX)^{-1}X^T](http://www.sciweavers.org/upload/Tex2Img_1492752105/render.png), slow if n is very large |
 | Chosen when n > 10k                 | Chosen when n < 10k       |
 
 

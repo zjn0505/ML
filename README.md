@@ -80,7 +80,7 @@ where the hypothesis ![h_\theta(x)](http://www.sciweavers.org/upload/Tex2Img_149
 <p align="center">
   <img src="http://www.sciweavers.org/upload/Tex2Img_1492767594/render.png" alt="h_\theta (x) = g ( \theta^T x )"/>
   <br>
-  <img src="http://www.sciweavers.org/upload/Tex2Img_1492767651/render.png" alt="z = \theta^T"/>
+  <img src="http://www.sciweavers.org/upload/Tex2Img_1492778224/render.png" alt="z = \theta^Tx"/>
   <br>
   <img src="http://www.sciweavers.org/upload/Tex2Img_1492767678/render.png" alt="g(z) = \dfrac{1}{1 + e^{-z}}"/>
 </p>

@@ -51,6 +51,8 @@ The vectorized version is:
 | Chosen when n > 10k                 | Chosen when n < 10k       |
 | May need Feature Scaling            | No need of Feature Scaling|
 
+##### Feature Scaling
+returns a normalized version of X where the mean value of each feature is 0 and the standard deviation or range is 1. This is often a good preprocessing step to do when working with learning algorithms.
 
 &nbsp; [python](https://github.com/zjn0505/ML/blob/master/Python/gradient_descent.py)
 
@@ -134,7 +136,13 @@ The vectorized version is:
   <img src="http://www.sciweavers.org/upload/Tex2Img_1492767012/render.png" alt="\theta := \theta - \frac{\alpha}{m} X^{T} (g(X \theta ) - \vec{y})"/>
 </p>
 
+##### Regularization
 
+To avoid the hypothesis function overfitting to training data. Penalize the cost function to make it more general.
+
+[Regularized Linear Regression -- Coursera](https://www.coursera.org/learn/machine-learning/supplement/pKAsc/regularized-linear-regression)
+
+[Regularized Logisitic Regression -- Coursera](https://www.coursera.org/learn/machine-learning/supplement/v51eg/regularized-logistic-regression)
 
 
 <!--- LaTeX generated in http://www.sciweavers.org/free-online-latex-equation-editor -->

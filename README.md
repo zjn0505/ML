@@ -1,4 +1,7 @@
 # Human Learning Machine Learning -- HLML
+
+> I learn and I forget, hopefully the machine won't.
+
 #### perception 
 &nbsp; [python](https://github.com/zjn0505/ML/blob/master/Python/perceptron.py)
 

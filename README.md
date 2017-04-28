@@ -5,7 +5,7 @@
 #### perception 
 &nbsp; [python](https://github.com/zjn0505/ML/blob/master/Python/perceptron.py)
 
-#### linear regression
+#### Linear Regression
 - Cost Function
 
 <p align="center">
@@ -146,6 +146,25 @@ To avoid the hypothesis function overfitting to training data. Penalize the cost
 [Regularized Linear Regression -- Coursera](https://www.coursera.org/learn/machine-learning/supplement/pKAsc/regularized-linear-regression)
 
 [Regularized Logisitic Regression -- Coursera](https://www.coursera.org/learn/machine-learning/supplement/v51eg/regularized-logistic-regression)
+
+
+#### Neural Networks
+
+##### Model representation
+
+##### Feedforward and (regularized) cost function
+
+##### back propagation
+
+1. sigmoid gradient
+
+2. random initialization
+
+3. backpropagation (regularized)
+
+4. gradient checking
+
+5. learning parameters
 
 
 <!--- LaTeX generated in http://www.sciweavers.org/free-online-latex-equation-editor -->

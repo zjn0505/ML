@@ -57,6 +57,8 @@ The vectorized version is:
 ##### Feature Scaling
 returns a normalized version of X where the mean value of each feature is 0 and the standard deviation or range is 1. This is often a good preprocessing step to do when working with learning algorithms.
 
+[Motivation](https://en.wikipedia.org/wiki/Feature_scaling#Motivation) for Feature Scaling: a. reduce the effect of large range data set; b. increase converge speed.
+
 &nbsp; [python](https://github.com/zjn0505/ML/blob/master/Python/gradient_descent.py)
 
 Q1: Is there a proper choice of learning rate and iteration so that we can say "Yes, we'd like to ensure J(Θ) tend to converge at after 'X' iteration for most of input datasets"?

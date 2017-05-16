@@ -168,5 +168,8 @@ To avoid the hypothesis function overfitting to training data. Penalize the cost
 
 5. learning parameters
 
+#### Support Vector Machines (SVM)
+
+##### Kernel
 
 <!--- LaTeX generated in http://www.sciweavers.org/free-online-latex-equation-editor -->

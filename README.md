@@ -173,3 +173,9 @@ To avoid the hypothesis function overfitting to training data. Penalize the cost
 ##### Kernel
 
 <!--- LaTeX generated in http://www.sciweavers.org/free-online-latex-equation-editor -->
+
+### Unsupervised Learning
+
+#### Clustering (K-Means)
+
+#### Dimensionality Reduction

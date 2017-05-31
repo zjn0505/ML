@@ -2,6 +2,8 @@
 
 > I learn and I forget, hopefully the machine won't.
 
+### Supervised learning
+
 #### perception 
 &nbsp; [python](https://github.com/zjn0505/ML/blob/master/Python/perceptron.py)
 
@@ -178,4 +180,4 @@ To avoid the hypothesis function overfitting to training data. Penalize the cost
 
 #### Clustering (K-Means)
 
-#### Dimensionality Reduction
+### Dimensionality Reduction (PCA)

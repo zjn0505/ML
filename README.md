@@ -181,3 +181,7 @@ To avoid the hypothesis function overfitting to training data. Penalize the cost
 #### Clustering (K-Means)
 
 ### Dimensionality Reduction (PCA)
+
+### Anomaly Detection
+
+### Recommend Algorithm
